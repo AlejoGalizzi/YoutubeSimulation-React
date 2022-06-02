@@ -6,7 +6,7 @@ const VideoItem = ({ video, onVideoSelect }) => {
     <div
       onClick={() => {
         onVideoSelect(video);
-      }}
+      }}  
       className="video-item item"
     >
       <div className="ui small image">
