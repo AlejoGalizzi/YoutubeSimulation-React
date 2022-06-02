@@ -3,6 +3,7 @@ import SearchBar from "./SearchBar";
 import youtubeRequest from "../api/youtube-request";
 import VideoList from "./VideoList";
 import VideoDetail from "./VideoDetail";
+import CommentList from "./CommentList";
 import words from "random-words";
 
 class App extends React.Component {
@@ -34,6 +35,7 @@ class App extends React.Component {
             <div className="ui row">
               <div className="eleven wide column">
                 <VideoDetail video={this.state.selectedVideo}/>
+                <CommentList/>
               </div>
               <div className="five wide column">
                 <VideoList
